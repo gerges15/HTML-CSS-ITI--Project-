@@ -9,4 +9,5 @@
   --clr-bg-light: #ff8f00;
   --clr-div-1: #3663e0;
   --clr-div-2: #552057;
+  --gradient-clr: linear-gradient(90deg, #af47d2, #ff8f00;);
 }
