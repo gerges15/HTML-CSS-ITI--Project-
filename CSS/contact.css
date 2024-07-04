@@ -1,0 +1,78 @@
+@import url(./styles.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--clr-bg-dark-2);
+}
+.text__bold {
+  font-weight: 900;
+}
+.contact__header {
+  font-family: "Alegreya SC";
+  text-align: center;
+}
+.contact {
+  background-color: var(--clr-bg-block-2);
+  width: 46.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 70vh;
+}
+
+.contact__form {
+  padding: 0 2rem;
+}
+.contact__input {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  border: none;
+  color: white;
+  font-family: inherit;
+  margin-bottom: 3rem;
+  border-bottom: 4px solid var(--clr-div-1);
+  background-color: var(--clr-bg-block-2);
+}
+
+.contact_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  height: 50%;
+  width: 4rem;
+  left: 46.5rem;
+  top: 25%;
+}
+
+.contact__btn button {
+  height: 70px;
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: #3e6aff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contact__btn button:hover {
+  background-color: white;
+  color: #3e6aff;
+}
+
+.contact__input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: lightgray;
+}
