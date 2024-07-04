@@ -1,0 +1,12 @@
+/* CSS file */
+@import url(./normalize.css);
+:root {
+  --clr-primary: #b000b7;
+  --clr-bg-dark-1: #32012f;
+  --clr-bg-dark-2: #373a40;
+  --clr-bg-block-1: #2b1b2b;
+  --clr-bg-block-2: #3b66f3;
+  --clr-bg-light: #ff8f00;
+  --clr-div-1: #3663e0;
+  --clr-div-2: #552057;
+}
