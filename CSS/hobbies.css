@@ -1,0 +1,58 @@
+@import url(./styles.css);
+body {
+  background-color: var(--clr-bg-dark-2);
+}
+
+.hobbies__header {
+  text-align: center;
+  color: white;
+  font-family: "Alegreya SC", "Times New Roman", Times, serif;
+  font-size: 2.3rem;
+}
+
+.hobbies__container {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  justify-content: space-around;
+}
+
+.card {
+  outline: dotted var(--clr-primary);
+  padding: 2rem;
+  border-radius: 30px;
+  margin: 4rem;
+  width: 400px;
+  background-color: var(--clr-bg-block-1);
+  color: white;
+  transition: transform 0.3s ease-out;
+  flex-basis: 1;
+  box-shadow: 0 0 20px 5px var(--clr-primary);
+}
+
+.hobbies__img img {
+  width: 100%;
+  border-radius: 30px;
+  height: 250px;
+  object-fit: cover;
+  border: 0.5rem solid;
+}
+.card__title {
+  color: var(--clr-primary);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1258px) {
+  .hobbies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .card {
+    margin-bottom: 0.3rem;
+  }
+}
