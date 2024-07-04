@@ -52,8 +52,6 @@ body {
   background-color: white;
   color: var(--clr-primary);
   font-weight: bold;
-  /* transition: all 0.3s step-start 1s; */
-  /* transition: delay 0.3s step-start 1s; */
 }
 
 .btn:hover {
@@ -72,5 +70,28 @@ body {
 
   ::placeholder {
     font-size: 2rem;
+  }
+}
+
+.intro__img {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  animation: hide__img 5s forwards;
+}
+.intro__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes hide__img {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
