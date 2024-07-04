@@ -1,0 +1,76 @@
+@import url(styles.css);
+
+body {
+  background: radial-gradient(circle, #af47d2, #ff8f00);
+  height: 100vh;
+}
+
+.hb__header {
+  font-family: "Alegreya SC";
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+}
+.message {
+  color: var(--clr-primary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: 50%;
+}
+.container {
+  width: 50%;
+  height: 100%;
+}
+.container input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  outline: none;
+  margin-bottom: 1rem;
+  border: 0.5rem solid #ff8f00;
+  color: #ff8f00;
+  font-size: 4rem;
+  text-align: center;
+}
+.container input[type="text"]:focus {
+  border: 0.5rem solid var(--clr-primary);
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.btn {
+  padding: 2rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: none;
+  background-color: white;
+  color: var(--clr-primary);
+  font-weight: bold;
+  /* transition: all 0.3s step-start 1s; */
+  /* transition: delay 0.3s step-start 1s; */
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--clr-primary);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0.3;
+}
+@media screen and (max-width: 1024px) {
+  .hb__header {
+    font-size: 2.5rem;
+  }
+  .input[type="text"] {
+    font-size: 2rem;
+  }
+
+  ::placeholder {
+    font-size: 2rem;
+  }
+}
