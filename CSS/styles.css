@@ -9,5 +9,23 @@
   --clr-bg-light: #ff8f00;
   --clr-div-1: #3663e0;
   --clr-div-2: #552057;
-  --gradient-clr: linear-gradient(90deg, #af47d2, #ff8f00;);
+  --gradient-clr: linear-gradient(90deg, #af47d2, #ff8f00);
+
+  --header-font: "Alegray SC";
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-size: 2rem;
+  line-height: 1.5;
 }
