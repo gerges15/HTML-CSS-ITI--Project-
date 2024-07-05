@@ -12,7 +12,7 @@ body > div {
   background-color: white;
 }
 .cv__person {
-  outline: dotted blue;
+  /* outline: dotted blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +99,7 @@ body > div {
 .cv__skills {
   /* background: green; */
   grid-area: 2/2/4/3;
-  padding: 5rem;
+  padding: 0 5rem;
   /* color: black; */
 }
 .cv__skills-header h2 {
@@ -126,4 +126,27 @@ body > div {
 .job h3,
 .job p {
   margin: 0;
+}
+
+.cv__btn button {
+  outline: 0;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: var(--clr-primary);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  width: 20rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cv__btn button:hover {
+  outline: 0;
+
+  background-color: white;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
 }
